@@ -1,8 +1,12 @@
+import Markdown from 'react-markdown'
+
 function ProjectCard({ project }) {
     const projectName = Object.keys(project)[0]
     const projectDescription = project[projectName].description
     const projectImages = project[projectName].images
 
+    // open links in new tab
+    const ExternalLinkRenderer = (props) => <a href={props.href} target="_blank" rel="noreferrer">{props.children}</a>
 
     return (
         <div className="project-card">
@@ -12,7 +16,7 @@ function ProjectCard({ project }) {
           </div>
           <div className="project-card-back">
             <h1>{projectName}</h1>
-            <p>{projectDescription}</p>
+            <Markdown components={{ a: ExternalLinkRenderer }}>{projectDescription}</Markdown>
           </div>
         </div>
       </div> 

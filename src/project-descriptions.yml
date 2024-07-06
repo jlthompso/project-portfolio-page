@@ -1,12 +1,18 @@
 ---
 - Shaker Side Table:
-    description: Built from a single piece of rough 8/4 black cherry wood and finished with a shop made oil/varnish blend.
+    description: > 
+        Built from a single piece of rough 8/4 black cherry and finished with a homemade
+        [oil/varnish blend](https://blog.lostartpress.com/2020/01/23/our-shop-finish-recipe/). Design from Christopher Schwarz's
+        [Shaker Side Table](https://www.lie-nielsen.com/products/shaker-side-table?path=home-education-videos-christopher-schwarz&node=4244) with
+        adaptations from Mike Pekovich's [The Why and How of Woodworking](https://www.pekovichwoodworks.com/shop/the-why-and-how-of-woodworking).
+
     images:
         - side_table_front.jpg
         - side_table_drawer.jpg
 - Plant Table:
     description: > 
-                Original design. Constructed from Douglas Fir construction lumber with Purpleheart wedges.
-                Marigold Old Fashoned Milk Paint and shop made soft wax finish.
+            Original design constructed from Douglas-fir construction lumber with Purpleheart tusk tenon wedges.
+            [Marigold Old Fashoned Milk Paint](https://milkpaint.com/product/marigold-ofmp) and shop made
+            [soft wax](https://blog.lostartpress.com/2021/07/12/cook-your-own-linseed-oil-wax-finish/) finish.
     images:
         - plant_table.jpg

@@ -12,7 +12,7 @@ function ProjectCard({ project }) {
         <div className="project-card">
         <div className="project-card-inner">
           <div className="project-card-front">
-            <img src={`/images/${projectImages[0]}`}/>
+            <img src={`images/${projectImages[0]}`}/>
           </div>
           <div className="project-card-back">
             <h1>{projectName}</h1>

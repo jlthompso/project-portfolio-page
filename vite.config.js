@@ -8,5 +8,5 @@ export default defineConfig({
     react(),
     ViteYaml(),
   ],
-  base: "http://jlthompso.github.io/project-portfolio-page/",
+  base: "/project-portfolio-page/",
 })

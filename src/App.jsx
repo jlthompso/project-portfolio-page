@@ -1,6 +1,6 @@
 import './App.css'
 import ProjectCard from './components/ProjectCard'
-import projects from './project-descriptions.yml'
+import projects from './assets/project-descriptions.yml'
 
 function App() {
   return (

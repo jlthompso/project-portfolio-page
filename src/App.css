@@ -6,34 +6,29 @@
   text-align: center;
 }
 
-/* For mobile phones: */
-[class*="grid--"] {
-  display: grid;
-  grid-template-columns: repeat(1, 1fr);
-  column-gap: 15px;
-  row-gap: 15px;
-}
-
-/* For tablets: */
-@media only screen and (min-width: 660px) {
-  .grid--s { grid-template-columns: repeat(2, 1fr); }
-  .product-details__column { flex: 50%; }
-}
-
-/* For desktop: */
-@media only screen and (min-width: 990px) {
-  .grid--m { grid-template-columns: repeat(3, 1fr); }
-}
-
-/* For desktop: */
-@media only screen and (min-width: 1320px) {
-  .grid--l { grid-template-columns: repeat(4, 1fr); }
+.project-gallery {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  max-width: 1800px;
 }
 
 .project-card {
   background-color: transparent;
-  width: 400px;
-  height: 400px;
+  min-width: 300px;
+  max-width: 400px;
+  aspect-ratio: 1;
+  flex-grow: 1;
+}
+
+.project-card-image {
+  max-width: 100%;
+}
+
+.project-card-text {
+  margin: 0 1rem;
 }
 
 /* This container is needed to position the front and back side */
@@ -60,15 +55,8 @@
   backface-visibility: hidden;
 }
 
-/* Style the front side (fallback if image is missing) */
-.project-card-front {
-  background-color: #bbb;
-  color: black;
-}
-
 /* Style the back side */
 .project-card-back {
-  padding: 0 10px;
   background-color: lightgray;
   color: darkslategray;
   transform: rotateY(180deg);

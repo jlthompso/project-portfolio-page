@@ -10,15 +10,17 @@ function ProjectCard({ project }) {
 
     return (
         <div className="project-card">
-        <div className="project-card-inner">
-          <div className="project-card-front">
-            <img src={`images/${projectImages[0]}`}/>
+          <div className="project-card-inner">
+            <div className="project-card-front">
+              <img className="project-card-image" src={`images/${projectImages[0]}`}/>
+            </div>
+            <div className="project-card-back">
+              <div className="project-card-text">
+                <h1>{projectName}</h1>
+                <Markdown components={{ a: ExternalLinkRenderer }}>{projectDescription}</Markdown>
+              </div>
+            </div>
           </div>
-          <div className="project-card-back">
-            <h1>{projectName}</h1>
-            <Markdown components={{ a: ExternalLinkRenderer }}>{projectDescription}</Markdown>
-          </div>
-        </div>
       </div> 
     )
 }

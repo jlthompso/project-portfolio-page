@@ -4,7 +4,7 @@ import projects from './assets/project-descriptions.yml'
 
 function App() {
   return (
-    <div className='grid--s grid--m grid--l'>
+    <div className='project-gallery'>
       {projects.map((project, i) => <ProjectCard key={i} project={project} />)}
     </div>
   )

@@ -27,8 +27,8 @@
   max-width: 100%;
 }
 
-.project-card-text {
-  margin: 0 1rem;
+.project-card-description {
+  margin: auto 1rem;
 }
 
 /* This container is needed to position the front and back side */

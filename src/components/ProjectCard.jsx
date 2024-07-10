@@ -15,10 +15,8 @@ function ProjectCard({ project }) {
               <img className="project-card-image" src={`images/${projectImages[0]}`}/>
             </div>
             <div className="project-card-back">
-              <div className="project-card-text">
-                <h1>{projectName}</h1>
-                <Markdown components={{ a: ExternalLinkRenderer }}>{projectDescription}</Markdown>
-              </div>
+              <h2>{projectName}</h2>
+              <Markdown className="project-card-description" components={{ a: ExternalLinkRenderer }}>{projectDescription}</Markdown>
             </div>
           </div>
       </div> 

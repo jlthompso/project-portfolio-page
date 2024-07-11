@@ -16,6 +16,7 @@
 }
 
 .project-card {
+  position: relative;
   background-color: transparent;
   min-width: 300px;
   max-width: 400px;
@@ -31,42 +32,19 @@
   margin: auto 25px;
 }
 
-/* This container is needed to position the front and back side */
-.project-card-inner {
+.project-card-contents {
   position: relative;
   width: 100%;
   height: 100%;
   text-align: center;
-  transition: transform 0.8s;
-  transform-style: preserve-3d;
 }
 
-/* Do an horizontal flip when you move the mouse over the flip box container */
-@media (pointer: fine) {
-  .project-card:hover .project-card-inner {
-    transform: rotateY(180deg);
-  }
-}
-
-/* Use touchstart on mobile */
-.project-card-flip {
-  transform: rotateY(180deg);
-}
-
-/* Position the front and back side */
-.project-card-front, .project-card-back {
+.project-card-description-container {
   position: absolute;
   width: 100%;
   height: 100%;
-  -webkit-backface-visibility: hidden; /* Safari */
-  backface-visibility: hidden;
-}
-
-/* Style the back side */
-.project-card-back {
   background-color: lightgray;
   color: darkslategray;
-  transform: rotateY(180deg);
 }
 
 .next-button-container {
@@ -93,7 +71,6 @@
 /* Position the "next button" to the right */
 .next {
   right: 0;
-  border-radius: 3px 0 0 3px;
 }
 
 /* Fading animation */

@@ -1,6 +1,9 @@
 import Markdown from 'react-markdown'
+import { useState } from 'react'
 
 function ProjectCard({ project }) {
+    const [flipped, setFlipped] = useState(false)
+
     const projectName = Object.keys(project)[0]
     const projectDescription = project[projectName].description
     const projectImages = project[projectName].images
@@ -9,8 +12,8 @@ function ProjectCard({ project }) {
     const ExternalLinkRenderer = (props) => <a href={props.href} target="_blank" rel="noreferrer">{props.children}</a>
 
     return (
-        <div className="project-card">
-          <div className="project-card-inner">
+        <div className='project-card'>
+          <div className={flipped ? 'project-card-inner project-card-flip' : 'project-card-inner'} onTouchStart={() => setFlipped(!flipped)}>
             <div className="project-card-front">
               <img className="project-card-image" src={`images/${projectImages[0]}`}/>
             </div>

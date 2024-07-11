@@ -46,6 +46,11 @@
   transform: rotateY(180deg);
 }
 
+/* Use touchstart on mobile */
+.project-card-flip {
+  transform: rotateY(180deg);
+}
+
 /* Position the front and back side */
 .project-card-front, .project-card-back {
   position: absolute;

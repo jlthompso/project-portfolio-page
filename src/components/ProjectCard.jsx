@@ -20,11 +20,13 @@ function ProjectCard({ project }) {
       }
       setTimerId(setTimeout(resetCard, seconds * 1000))
     }
-    const nextImg = () => {
+    const nextImg = (e) => {
+      e.preventDefault()
       if (imgIdx < projectImages.length - 1) {setImgIdx(imgIdx + 1)}
       setTimer(5)
     }
-    const prevImg = () => {
+    const prevImg = (e) => {
+      e.preventDefault()
       if (imgIdx > 0) {setImgIdx(imgIdx - 1)}
       setTimer(5)
     }
@@ -46,8 +48,8 @@ function ProjectCard({ project }) {
                 </>
               }
               {projectImages.length > 1 && <div className='next-button-container'>
-                {imgIdx > 0 && <a className="prev" onClick={() => prevImg()}>&#10094;</a>}
-                {imgIdx < projectImages.length - 1 && <a className="next" onClick={() => nextImg()}>&#10095;</a>}
+                {imgIdx > 0 && <a className="prev" onClick={(e) => prevImg(e)}>&#10094;</a>}
+                {imgIdx < projectImages.length - 1 && <a className="next" onClick={(e) => nextImg(e)}>&#10095;</a>}
               </div>}
             </div>
           </div>

@@ -42,8 +42,10 @@
 }
 
 /* Do an horizontal flip when you move the mouse over the flip box container */
-.project-card:hover .project-card-inner {
-  transform: rotateY(180deg);
+@media (pointer: fine) {
+  .project-card:hover .project-card-inner {
+    transform: rotateY(180deg);
+  }
 }
 
 /* Use touchstart on mobile */

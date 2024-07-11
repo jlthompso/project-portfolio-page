@@ -28,7 +28,7 @@
 }
 
 .project-card-description {
-  margin: auto 1rem;
+  margin: auto 25px;
 }
 
 /* This container is needed to position the front and back side */
@@ -67,4 +67,42 @@
   background-color: lightgray;
   color: darkslategray;
   transform: rotateY(180deg);
+}
+
+.next-button-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 0 10px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.0s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
 }
